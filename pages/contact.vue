@@ -1,6 +1,6 @@
 <template>
     <div>
-        iletişim
+        <p>İletişim</p>
     </div>
 </template>
 
