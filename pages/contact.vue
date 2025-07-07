@@ -11,12 +11,12 @@
 </template>
 
 <script setup>
-const mesaj=ref("deneme")
+    const mesaj=ref("deneme")
 
-function msjDegis ()
-{
-    mesaj.value="yeni"
-}
+    function msjDegis ()
+    {
+        mesaj.value="yeni"
+    }
 
-const alert1=ref("Alert")
+    const alert1=ref("Alert")
 </script>

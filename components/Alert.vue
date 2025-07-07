@@ -14,11 +14,11 @@
 </script>
 
 <style scoped>
-.alert {
-    color: rgb(223, 46, 176);
-}
-.alert1{
-    color:purple;
-}
+    .alert {
+        color: rgb(223, 46, 176);
+    }
+    .alert1{
+        color:purple;
+    }
 </style>
 

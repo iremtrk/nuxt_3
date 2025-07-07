@@ -5,43 +5,48 @@
 
     <CounterButton/>
 
-    <NuxtTime :datetime="Date.now()" /> (hazır component)
-    <br> <br>
-    {{ deco }}
+    {{ num }}
 
-<button @click="inc">
-    increment
-</button> <br>
+    <button @click="increment">
+        increment
+    </button> |
 
-<button @click="decrement">
-    deco
-</button>
+    <button @click="decrement">
+        decrement
+    </button> |
+
+    <button @click="reset">
+        reset
+    </button>
 
 </template>
 
 <script setup>
 
-const deco=ref(0)
+    const num=ref(0)
 
-function inc(){
-    deco.value++
-}
-function decrement(){
-    deco.value--
-}
+    function increment(){
+        num.value++
+    }
+    function decrement(){
+        num.value--
+    }
+    function reset(){
+        num.value=0
+    }
 
-import CounterButton from '~/components/CounterButton.vue';
 
-onMounted(()=>{
-    console.log("about sayfası yüklendi")
-})
 
-onUnmounted(()=>{
-    console.log("about sayfası kaldırıldı")
-})
-onBeforeMount(()=>{
-    console.log("Yüklenmeden önce")
-})
+    /*onMounted(()=>{
+        console.log("about sayfası yüklendi")
+    })
+
+    onUnmounted(()=>{
+        console.log("about sayfası kaldırıldı")
+    })
+    onBeforeMount(()=>{
+        console.log("Yüklenmeden önce")
+    })*/
 </script>
 
 
