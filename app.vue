@@ -1,4 +1,4 @@
-<script setup lang ="ts">
+<script setup>
 
 </script>
 
@@ -11,5 +11,6 @@
     </NuxtLayout>
 
   </div>
-      
 </template>
+
+

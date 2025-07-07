@@ -1,0 +1,9 @@
+   .btn{
+        background-color: rgb(255, 0, 0);
+    }
+    .btn-primary{
+        color:blue;
+    }
+    .btn-secondary{
+        color:orange;
+    }
