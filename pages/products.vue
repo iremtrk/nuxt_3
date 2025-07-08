@@ -12,14 +12,13 @@
 
 <script setup>
 
+    
+    definePageMeta({
+        middleware:"redirect",
+    })
+
     const button1 =ref("buttonIrem")
 
-    
-    const kullanici =reactive({
-        isim:"İrem",
-        yas:22
-    })
-    console.log(kullanici.isim)
-    console.log(kullanici.yas)
+
 </script>
 

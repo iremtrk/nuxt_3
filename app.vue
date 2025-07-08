@@ -1,6 +1,3 @@
-<script setup>
-
-</script>
 
 <template>
 
@@ -12,5 +9,9 @@
 
   </div>
 </template>
+
+<script setup>
+
+</script>
 
 

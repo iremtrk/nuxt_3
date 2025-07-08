@@ -6,9 +6,7 @@
                 <NuxtLink to="/products">Ürünlerimiz</NuxtLink> |
                 <NuxtLink to="/contact">İletişim</NuxtLink> |
                 <NuxtLink to="/about_us">Hakkımızda</NuxtLink> |
-                <NuxtLink to="/deneme">Deneme</NuxtLink> 
-                
-
+                <NuxtLink to="/deneme">Deneme</NuxtLink> |
             </nav>
         </header>
       <slot/>  

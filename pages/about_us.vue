@@ -1,6 +1,8 @@
 <template>
     <div>
         <p> Hakkımızda</p>
+        {{ route.fullPath }}
+
     </div>
 
     <CounterButton/>
@@ -18,10 +20,19 @@
     <button @click="reset">
         reset
     </button>
-
 </template>
 
 <script setup>
+
+    definePageMeta({
+        middleware:"auth"
+    })
+
+    
+    const route=useRoute()
+    // console.log(route)
+
+
 
     const num=ref(0)
 
@@ -34,6 +45,7 @@
     function reset(){
         num.value=0
     }
+
 
 
 

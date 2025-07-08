@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button :class="props.color">{{props.title}}</button>
+        <button :class="props.color">{{title}}</button>
     </div>
 </template>
 
@@ -15,6 +15,8 @@
             default:"btn"
         }
     })
+
+    const title=computed(()=> props.title)
 
 </script>
 
