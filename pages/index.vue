@@ -6,15 +6,15 @@
         <!-- <div :class="{active: isActive, error:!isActive}">aktif</div> -->
          <div :class="activity">aktif</div>
 
-         <p v-for="item in list" :key="item">{{ item }}</p>
+         <!-- <p v-for="item in list" :key="item">{{ item }}</p> -->
 
          <ul>
              <li v-for="(value,key) in myObject">
-                {{ key }}: {{ value }}
+                 {{ key }}: {{ value }}
             </li> <br> <br>
 
-            <li v-for="value in myObject">
-                {{ value }}
+            <li v-for="(value,key) in myObject">
+                {{ key }}
             </li>
          </ul>
 
@@ -30,7 +30,8 @@ const myObject =reactive({
     publishedAt:'08-07-2025'
 })
 
-const list =ref([1,2,3,4,5])
+// const list =ref([1,2,3,4,5])
+
 // const isActive=ref(false)
 const activity=reactive({
     active:true,

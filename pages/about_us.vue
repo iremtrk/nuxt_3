@@ -3,23 +3,24 @@
         <p> Hakkımızda</p>
         {{ route.fullPath }}
 
-    </div>
+    
 
-    <CounterButton/>
+        <CounterButton/>
 
-    {{ num }}
+        {{ num }}
 
-    <button @click="increment">
-        increment
-    </button> |
+        <button @click="increment">
+            increment
+        </button> |
 
-    <button @click="decrement">
-        decrement
-    </button> |
+        <button @click="decrement">
+            decrement
+        </button> |
 
-    <button @click="reset">
-        reset
-    </button>
+        <button @click="reset">
+            reset
+        </button>
+        </div>
 </template>
 
 <script setup>

@@ -12,6 +12,9 @@
          <h3> {{ greeting }}</h3>    
          {{ counter }}
 
+        <Event2/>
+
+
     </div>
 </template>
 
